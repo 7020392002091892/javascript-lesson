@@ -8,7 +8,7 @@ console.log('私のニックネームは' + nickneme + 'です。年齢は' + ag
 //Q 2.配列
 let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
 
-let templateText = `私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`;
+let templateText = `私の好きな言語は${ languages[0] }です。次は${ languages[3] }を勉強してみたいです。`;
 
 console.log(templateText);
 
@@ -41,23 +41,23 @@ let playerList = [
   },
 ];
 
-console.log(playerList[1].favorites[1])
+console.log(playerList[1].favorites[1]);
 
 //Q 5.四則演算
 let averageAge = 0;
 
-for(let i = 0; i < playerList.length; i++){
+for(let i = 0; i < playerList.length; i++) {
   averageAge += playerList[i].age;
 }
 
-console.log(averageAge/playerList.length);
+console.log(averageAge / playerList.length);
 
 //Q 6.関数
-function sayHello(){
+function sayHello() {
   console.log('Hello');
 }
 
-const sayWorld = function(){
+const sayWorld = function() {
   console.log('World');
 }
 
@@ -66,7 +66,7 @@ sayWorld();
 
 //Q 7.メソッド
 user.birthday = '2000-09-27';
-user.sayHello = function(){
+user.sayHello = function() {
   console.log('Hello!');
 }
 
@@ -74,31 +74,31 @@ user.sayHello();
 
 //Q 8.引数
 let calc = {
-  add: function(x,y){
+  add: function(x, y) {
     console.log(x + y);
   },
-  subtract: function(x,y){
+  subtract: function(x, y) {
     console.log(x - y);
   },
-  multiply: function(x,y){
+  multiply: function(x, y) {
     console.log(x * y);
   },
-  divide: function(x,y){
+  divide: function(x, y) {
     console.log(x / y);
   },
 };
 
-calc.add(3,4);
-calc.subtract(15,5);
-calc.multiply(7,7);
-calc.divide(10,2);
+calc.add(3, 4);
+calc.subtract(15, 5);
+calc.multiply(7, 7);
+calc.divide(10, 2);
 
 //Q 9.返り値
-function remainder (x,y){
+function remainder (x, y) {
   return x % y;
 }
 
-console.log( '5 を 3 で割った余りは '+ remainder(5,3) +' です。');
+console.log( '5 を 3 で割った余りは '+ remainder(5, 3) +' です。');
 
 //Q10.スコープ
 //A. x は foo 関数のスコープ内でしか参照できないため、
@@ -110,17 +110,17 @@ let random = Math.floor(Math.random() * 10); // 0~1までの乱数の生成
 console.log('random => ', random);
 
 //Q2 コールバック関数
-setTimeout (function(){
+setTimeout (function() {
   console.log('Hello World!');
-},3000);
+}, 3000);
 
 //Q3 if
 let num = 20;
 
-if(num > 0){
+if(num > 0) {
   console.log('num is greater than 0');
 }
-else if(num < 0){
+else if(num < 0) {
   console.log('num is less than 0');
 }
 else{
@@ -130,7 +130,7 @@ else{
 //Q4 for
 let numbers =[];
 
-for(let i = 0; i < 100; i++){
+for(let i = 0; i < 100; i++) {
   numbers[i] = i;
 }
 
@@ -139,16 +139,16 @@ console.log(numbers);
 //Q5 for × if
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
-for(let i = 0; i < mixed.length; i++){
-  if(typeof mixed[i] !=='number'){
+for(let i = 0; i < mixed.length; i++) {
+  if(typeof mixed[i] !== 'number') {
     console.log('not number');
     continue
   }
-  if(mixed[i] % 2 === 0){
+  if(mixed[i] % 2 === 0) {
     console.log('even');
     continue;
   }
-  if(mixed[i] % 2=== 1){
+  if(mixed[i] % 2 === 1) {
     console.log('odd');
   }
 }
