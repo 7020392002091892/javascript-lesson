@@ -104,7 +104,7 @@ console.log( '5 を 3 で割った余りは '+ remainder(5,3) +' です。');
 //A. x は foo 関数のスコープ内でしか参照できないため、
 //関数の外では x を参照できずエラーになる。
 
-//基礎編（問題）
+//応用編（問題）
 //Q1 標準組み込みオブジェクト
 let random = Math.floor(Math.random() * 10); // 0~1までの乱数の生成
 console.log('random => ', random);
@@ -121,10 +121,10 @@ if(num > 0){
   console.log('num is greater than 0');
 }
 else if(num < 0){
-  console.log('num is greater than 0');
+  console.log('num is less than 0');
 }
 else{
-  console.log('num is greater than 0');
+  console.log('num is 0');
 }
 
 //Q4 for
