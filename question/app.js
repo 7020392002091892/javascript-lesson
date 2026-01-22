@@ -144,11 +144,11 @@ for(let i = 0; i < mixed.length; i++){
     console.log('not number');
     continue
   }
-  if(Math.ceil(mixed[i] % 2)=== 0){
+  if(mixed[i] % 2 === 0){
     console.log('even');
     continue;
   }
-  if(Math.ceil(mixed[i] % 2)=== 1){
+  if(mixed[i] % 2=== 1){
     console.log('odd');
   }
 }
