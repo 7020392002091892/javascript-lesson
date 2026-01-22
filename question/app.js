@@ -95,10 +95,10 @@ calc.divide(10,2);
 
 //Q 9.返り値
 function remainder (x,y){
- console.log( x + ' を '+ y +' で割った余りは '+ Math.ceil(x / y) +' です。');
+  return x % y;
 }
 
-remainder(5,3);
+console.log( '5 を 3 で割った余りは '+ remainder(5,3) +' です。');
 
 //Q10.スコープ
 //A. x は foo 関数のスコープ内でしか参照できないため、
