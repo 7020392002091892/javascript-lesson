@@ -8,7 +8,9 @@ console.log('私のニックネームは' + nickneme + 'です。年齢は' + ag
 //Q 2.配列
 let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
 
-console.log('私の好きな言語は' + languages[0] + 'です。次は' + languages[3] + 'を勉強してみたいです。');
+let templateText = `私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`;
+
+console.log(templateText);
 
 //Q 3.オブジェクト
 let user = {
